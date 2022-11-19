@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.dashboard.FragmentDashBoard.CreateImageFragment">
+
+    <TextView
+        android:id="@+id/tvCreateImageTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:fontFamily="@font/minecraft"
+        android:text="@string/txtCreateImg"
+        android:layout_marginTop="@dimen/genMarg"
+        android:layout_marginBottom="@dimen/genMarg"
+        android:textSize="@dimen/genTitleSize"/>
+
+    <ImageView
+        android:id="@+id/ivPreVisualizadorImage"
+        android:layout_width="@dimen/iVCreateWidth"
+        android:layout_height="@dimen/iVCreateHeight"
+        android:layout_marginBottom="@dimen/genMarg"
+        android:background="@drawable/shape_imageview"
+        tools:src="@tools:sample/avatars"
+        android:layout_gravity="center"/>
+
+    <Button
+        android:id="@+id/btnChooseImage"
+        style="@style/btnDash"
+        android:background="@drawable/shape_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/genMarg"
+        android:text="@string/btnChooseImage" />
+    <Button
+        android:id="@+id/btnSaveImage"
+        style="@style/btnDash"
+        android:background="@drawable/shape_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/genMarg"
+        android:text="@string/btnSaveImage" />
+
+
+</LinearLayout>

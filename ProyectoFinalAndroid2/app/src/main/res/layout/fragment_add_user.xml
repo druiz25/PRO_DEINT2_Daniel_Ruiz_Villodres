@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.dashboard.FragmentDashBoard.AddUserFragment">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/glStart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="@dimen/genMarg" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/glEnd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_end="@dimen/genMarg" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tilNombreUser"
+        style="InInTextInputLayout"
+        android:layout_width="@dimen/tilNombreWidth"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/genMarg"
+        app:layout_constraintEnd_toStartOf="@+id/glEnd"
+        app:layout_constraintStart_toStartOf="@+id/glStart"
+        app:layout_constraintTop_toBottomOf="@+id/tvTituloAdd"
+        app:startIconDrawable="@drawable/ic_baseline_person_24">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/tieNombreUser"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="@string/tieUser"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/tvTituloAdd"
+        android:layout_width="@dimen/tvTituloAddWidth"
+        android:layout_height="@dimen/tvTituloAddHeight"
+        android:layout_marginTop="@dimen/genMarg"
+        android:gravity="center"
+        android:fontFamily="@font/minecraft"
+        android:text="@string/tvTituloAdd"
+        android:textSize="@dimen/genTitleSize"
+        app:layout_constraintEnd_toStartOf="@+id/glEnd"
+        app:layout_constraintHorizontal_bias="0.487"
+        app:layout_constraintStart_toStartOf="@+id/glStart"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnAddUser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/genMarg"
+        android:layout_marginTop="@dimen/genMarg"
+        android:layout_marginEnd="@dimen/genMarg"
+        android:text="@string/btnAdd"
+        app:layout_constraintEnd_toStartOf="@+id/glEnd"
+        app:layout_constraintStart_toStartOf="@+id/glStart"
+        app:layout_constraintTop_toBottomOf="@+id/tilNombreUser" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,54 @@
+<resources>
+    <string name="app_name">PlayBros Forum</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="login_fragment_label" translatable="false">Login Fragment</string>
+    <string name="next" translatable="false">Next</string>
+    <string name="previous" translatable="false">Previous</string>
+
+    <string name="AboutUsName">Autor: Daniel Ruiz Villodres</string>
+    <string name="AboutUsSubTiTle">Estudiante</string>
+    <string name="AboutUsBrief">Aqui ira toda la informacion respecto al proyecto y su funcionamiento general</string>
+    <string name="action_aboutUs">sobre nosotros</string>
+    <string name="tvTitulo">bienvenido a \nPlay bros</string>
+
+    <string name="btnRegistrar">Registrar</string>
+    <string name="btnTextLogin">Acceder</string>
+    <string name="tvIniciarSesion">Iniciar sesion con otras plataformas</string>
+    <string name="contentDescription">Vacio</string>
+    <string name="cbRecuerdame">Recuerdame</string>
+    <string name="tilUsuarioHint">Usuario</string>
+    <string name="tilContraseñaHint">Contraseña</string>
+    <string name="tvTitleSingUp">Registro</string>
+    <string name="tieUser">Nombre Usuario</string>
+    <string name="tieEmail">Correo</string>
+    <string name="tiePassword">Contraseña</string>
+    <string name="tieConfirmPassword">Confirmar contraseña</string>
+    <string name="chNotficaciones">Activar notificaciones</string>
+    <string name="chTerms">Acepto todos los terminos</string>
+    <string name="SingUpFragment">Registrarse</string>
+    <string name="fab">boton OK</string>
+    <string name="tvCreateTxt">Fecha creacion</string>
+    <string name="tvActivatedTxt">Fecha activacion</string>
+    <string name="tvEndedTxt">Fecha fin</string>
+    <string name="tvEditTxt">Editar</string>
+    <string name="tvTxtLogin">Acceso</string>
+    <string name="btnAdd">Añadir amigo</string>
+    <string name="btnEdit" translatable="false">Edit Button</string>
+    <string name="hello_blank_fragment" translatable="false">Hello blank fragment</string>
+    <string name="tvTituloAdd">Añadir user</string>
+    <string name="btnCreateChat">Crear Chat</string>
+    <string name="txtTitleCrearChat">Crear nuevo chat</string>
+    <string name="tvCreateChatTxt">Nombre chat</string>
+    <string name="tvTipoChatTxt">Tipo de chat</string>
+    <string name="txtTitleEditarChat">Editar chat</string>
+    <string name="tvEditChatTxt">Nuevo nombre</string>
+    <string name="btnEditarChat">Confirmar cambios</string>
+    <string name="tvEnumChatsTxt">Chat a editar</string>
+    <string name="btnEditImage">Editar imagen</string>
+    <string name="txtCreateImg">Crear imagen</string>
+    <string name="btnChooseImage">Elegir imagen</string>
+    <string name="btnSaveImage">Guardar imagen</string>
+    <string name="btnElegirImage">Elegir imagen</string>
+    <string name="txtIcon">Icono</string>
+    <string name="itemTipoChatPublico">Publico</string>
+</resources>

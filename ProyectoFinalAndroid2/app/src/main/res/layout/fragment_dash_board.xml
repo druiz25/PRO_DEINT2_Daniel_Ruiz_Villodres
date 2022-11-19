@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.dashboard.DashBoardFragment"
+    android:gravity="center"
+    android:background="@drawable/shape_imageview">
+
+    <TableRow
+        android:layout_width="wrap_content"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/btnEdit"
+            style="@style/btnDash"
+            android:contentDescription="@string/btnEdit"
+            android:text="@string/btnEdit" />
+
+        <Button
+            android:id="@+id/btnAdd"
+            style="@style/btnDash"
+            android:contentDescription="@string/btnAdd"
+            android:text="@string/btnAdd" />
+
+    </TableRow>
+    <TableRow
+        android:layout_width="wrap_content"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/btnCreateChat"
+            style="@style/btnDash"
+            android:contentDescription="@string/btnCreateChat"
+            android:text="@string/btnCreateChat" />
+
+        <Button
+            android:id="@+id/btnEditChat"
+            style="@style/btnDash"
+            android:contentDescription="@string/txtTitleEditarChat"
+            android:text="@string/txtTitleEditarChat" />
+
+    </TableRow>
+    <TableRow
+        android:layout_width="wrap_content"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/btnCreateImage"
+            style="@style/btnDash"
+            android:contentDescription="@string/txtCreateImg"
+            android:text="@string/txtCreateImg" />
+
+        <Button
+            android:id="@+id/btnEditImage"
+            style="@style/btnDash"
+            android:contentDescription="@string/btnEditImage"
+            android:text="@string/btnEditImage" />
+
+    </TableRow>
+
+</TableLayout>

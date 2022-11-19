@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">PlayBros Forum</string>
+    <string name="btnCreateChat">Create chat</string>
+    <string name="tvTituloAdd">Add user</string>
+    <string name="btnAdd">Add friend</string>
+    <string name="tvTxtLogin">Access</string>
+    <string name="tvEditTxt">Edit</string>
+    <string name="tvEndedTxt">End date</string>
+    <string name="tvActivatedTxt">Start date</string>
+    <string name="tvCreateTxt">Creating date</string>
+    <string name="fab">OK button</string>
+    <string name="SingUpFragment">Register</string>
+    <string name="chTerms">Acept all terms of service</string>
+    <string name="chNotficaciones">Activate notifications</string>
+    <string name="tieConfirmPassword">Confirm password</string>
+    <string name="tiePassword">Password</string>
+    <string name="tieEmail">Mail</string>
+    <string name="tieUser">User\'s name</string>
+    <string name="tvTitleSingUp">Register</string>
+    <string name="tilContraseñaHint">Password</string>
+    <string name="tilUsuarioHint">User</string>
+    <string name="cbRecuerdame">Remenber me</string>
+    <string name="contentDescription">Empty</string>
+    <string name="tvIniciarSesion">Start session by other means</string>
+    <string name="btnTextLogin">Access</string>
+    <string name="btnRegistrar">Register</string>
+    <string name="tvTitulo">Welcome to \nPlay Bros</string>
+    <string name="action_aboutUs">About Us</string>
+    <string name="AboutUsBrief">Here goes all the information about the proyect and it\'s functions</string>
+    <string name="AboutUsSubTiTle">Student</string>
+    <string name="AboutUsName">Author: Daniel Ruiz Villodres</string>
+    <string name="txtTitleCrearChat">Create new chat</string>
+    <string name="btnSaveImage">Save image</string>
+    <string name="btnChooseImage">Choose image</string>
+    <string name="txtCreateImg">Create image</string>
+    <string name="tvCreateChatTxt">Name of the chat</string>
+    <string name="tvTipoChatTxt">Type of chat</string>
+    <string name="txtTitleEditarChat">Edit chat</string>
+    <string name="tvEditChatTxt">New name of the chat</string>
+    <string name="btnEditarChat">Confirm changes</string>
+    <string name="tvEnumChatsTxt">Chat selected to edit</string>
+    <string name="btnEditImage">Edit image</string>
+    <string name="btnElegirImage">Choose image</string>
+    <string name="txtIcon">Icon</string>
+</resources>

@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".ui.dashboard.FragmentDashBoard.AddUserFragment">
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="@dimen/genBigWidgetWidth"
+        android:layout_height="@dimen/spinnerLayoutHeight"
+        android:contentDescription="@string/AboutUsBrief"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/glEnd"
+        app:layout_constraintHorizontal_bias="0.181"
+        app:layout_constraintStart_toEndOf="@+id/tvTipoChat"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.248" />
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="@dimen/tvTitleCrearChatWidth"
+        android:layout_height="@dimen/tvTitleCrearChatHeight"
+        android:layout_marginStart="@dimen/genMarg"
+        android:layout_marginTop="@dimen/genMarg"
+        android:fontFamily="@font/minecraft"
+        android:text="@string/txtTitleCrearChat"
+        android:textSize="@dimen/genTitleSize"
+        android:gravity="center"
+        app:layout_constraintStart_toEndOf="@+id/bCrearChat"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/glStart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="@dimen/genMarg" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/glEnd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="@dimen/glEndBegin" />
+
+    <androidx.constraintlayout.widget.Barrier
+        android:id="@+id/bCrearChat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:barrierDirection="right"
+        app:constraint_referenced_ids="tvCreatedName,tvTipoChat"
+        tools:layout_editor_absoluteX="128dp"
+        tools:layout_editor_absoluteY="135dp" />
+
+
+    <TextView
+        android:id="@+id/tvCreatedName"
+        android:layout_width="@dimen/width95dp"
+        android:layout_height="@dimen/tvGenHeight"
+        android:layout_marginStart="@dimen/genMarg"
+        android:layout_marginTop="@dimen/tvCreatedNameMargTop"
+        android:fontFamily="@font/minecraft"
+        android:text="@string/tvCreateChatTxt"
+        app:layout_constraintStart_toStartOf="@+id/glStart"
+        app:layout_constraintTop_toBottomOf="@+id/tvTitle" />
+
+
+    <TextView
+        android:id="@+id/tvTipoChat"
+        android:layout_width="@dimen/tvGenWidth"
+        android:layout_height="@dimen/tvGenHeight"
+        android:layout_marginStart="@dimen/genMarg"
+        android:layout_marginTop="@dimen/tvCreatedNameMargTop"
+        android:fontFamily="@font/minecraft"
+        android:text="@string/tvTipoChatTxt"
+        app:layout_constraintStart_toStartOf="@+id/glStart"
+        app:layout_constraintTop_toBottomOf="@+id/tvCreatedName" />
+
+    <EditText
+        android:id="@+id/edtCreated"
+        android:layout_width="@dimen/etCreatedWidth"
+        android:layout_height="@dimen/etCreatedHeight"
+        android:layout_marginStart="@dimen/genMarg"
+        android:inputType="text"
+        app:layout_constraintBaseline_toBaselineOf="@+id/tvCreatedName"
+        app:layout_constraintStart_toEndOf="@+id/bCrearChat" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floatingActionButton2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/genMarg"
+        android:layout_marginTop="@dimen/genMarg"
+        android:layout_marginEnd="@dimen/genMarg"
+        android:layout_marginBottom="@dimen/genMarg"
+        app:tint="@color/white"
+        app:elevation="@dimen/genElevationFB"
+        android:clickable="true"
+        android:src="@drawable/ic_baseline_check_24"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

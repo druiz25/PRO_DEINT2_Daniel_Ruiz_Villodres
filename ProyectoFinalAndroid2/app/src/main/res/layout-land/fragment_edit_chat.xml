@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.dashboard.FragmentDashBoard.EditChatFragment">
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="@dimen/genBigWidgetWidth"
+        android:layout_height="@dimen/genTitleHeight"
+        android:layout_gravity="center"
+        android:layout_marginStart="@dimen/genMarg"
+        android:layout_marginTop="@dimen/genMarg"
+        android:layout_marginEnd="@dimen/genMarg"
+        android:fontFamily="@font/minecraft"
+        android:gravity="center"
+        android:text="@string/txtTitleEditarChat"
+        android:textSize="@dimen/genTitleSize"
+        app:layout_constraintEnd_toStartOf="@+id/glEnd"
+        app:layout_constraintHorizontal_bias="0.244"
+        app:layout_constraintStart_toStartOf="@+id/glStart"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="@dimen/genBigWidgetWidth"
+        android:layout_height="@dimen/spinnerLayoutHeight"
+        android:layout_marginTop="@dimen/marg28"
+        android:layout_marginEnd="220dp"
+        android:contentDescription="@string/AboutUsBrief"
+        app:layout_constraintEnd_toStartOf="@+id/glEnd"
+        app:layout_constraintTop_toBottomOf="@+id/edtCreated" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/glStart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="@dimen/genMarg" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/glEnd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_end="@dimen/genMarg" />
+
+
+    <TextView
+        android:id="@+id/tvEditName"
+        android:layout_width="@dimen/tvEditNameWidth"
+        android:layout_height="@dimen/tvEditNameHeight"
+        android:layout_marginStart="@dimen/marg36dp"
+        android:layout_marginTop="@dimen/marg36dp"
+        android:fontFamily="@font/minecraft"
+        android:text="@string/tvEditChatTxt"
+        app:layout_constraintStart_toStartOf="@+id/glStart"
+        app:layout_constraintTop_toBottomOf="@+id/tvTitle" />
+
+    <TextView
+        android:id="@+id/tvTipoChat"
+        android:layout_width="@dimen/tvTipoChatWidth"
+        android:layout_height="@dimen/tvEditNameHeight"
+        android:layout_marginStart="@dimen/genMarginTop"
+        android:layout_marginTop="@dimen/tvTipoChatMarginTop"
+        android:fontFamily="@font/minecraft"
+        android:text="@string/tvTipoChatTxt"
+        app:layout_constraintEnd_toStartOf="@+id/spinner"
+        app:layout_constraintHorizontal_bias="0.129"
+        app:layout_constraintStart_toStartOf="@+id/glStart"
+        app:layout_constraintTop_toBottomOf="@+id/tvEditName" />
+
+    <EditText
+        android:id="@+id/edtCreated"
+        android:layout_width="@dimen/edtCreatedWidth"
+        android:layout_height="@dimen/genHeight"
+        android:layout_marginEnd="@dimen/marg268dp"
+        android:inputType="text"
+        app:layout_constraintBaseline_toBaselineOf="@+id/tvEditName"
+        app:layout_constraintEnd_toStartOf="@+id/glEnd" />
+
+    <TextView
+        android:id="@+id/tvEnumChats"
+        android:layout_width="@dimen/tvTipoChatWidth"
+        android:layout_height="@dimen/genHeight"
+        android:layout_marginStart="@dimen/genMarg"
+        android:layout_marginTop="@dimen/marg96dp"
+        android:fontFamily="@font/minecraft"
+        android:text="@string/tvEnumChatsTxt"
+        app:layout_constraintEnd_toStartOf="@+id/lChats"
+        app:layout_constraintHorizontal_bias="0.129"
+        app:layout_constraintStart_toStartOf="@+id/glStart"
+        app:layout_constraintTop_toBottomOf="@+id/tvTipoChat" />
+
+    <Button
+        android:id="@+id/button"
+        style="@style/btn"
+        android:layout_width="@dimen/marg146dp"
+        android:layout_height="@dimen/marg55dp"
+        android:layout_marginEnd="@dimen/genMarg"
+        android:background="@drawable/shape_btn"
+        android:text="@string/btnEditarChat"
+        app:layout_constraintEnd_toStartOf="@+id/glEnd"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/spinner"
+        app:layout_constraintTop_toTopOf="@+id/spinner" />
+
+    <ListView
+        android:id="@+id/lChats"
+        android:layout_width="@dimen/lvChatsWidth"
+        android:layout_height="@dimen/lvChatsHeight"
+        android:layout_marginTop="@dimen/marg20dp"
+        android:layout_marginEnd="@dimen/marg204dp"
+        android:scrollbars="vertical"
+        app:layout_constraintEnd_toStartOf="@+id/glEnd"
+        app:layout_constraintTop_toBottomOf="@+id/spinner" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

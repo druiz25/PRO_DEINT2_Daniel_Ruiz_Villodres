@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="AppPrincTheme" parent="Theme.ProyectoFinalAndroid">
+        <item name="android:textViewStyle">@style/TextViewStyle</item>
+        <item name="android:buttonStyle">@style/ButtonStyle</item>
+    </style>
+
+    <style name="TextViewStyle" parent="android:Widget.TextView">
+        <item name="android:fontFamily">@font/minecraft</item>
+    </style>
+
+    <style name="ButtonStyle" parent="android:Widget.Holo.Button">
+        <item name="android:fontFamily">@font/minecraft</item>
+    </style>
+
+    <style name="ButtonTransparent" parent="Widget.AppCompat.Button.Borderless">
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:textColor">@color/secondaryColor</item>
+    </style>
+    <!-- Este estilo hereda de ButtonTransparent al indicarlo con el nombre.Tambien se puede utilizar
+el atributo aprent -->
+    <style name="ButtonBacgroundAccent">
+        <item name="android:backgroundTint">@color/secondaryColor</item>
+    </style>
+    <style name="InInTextInputLayout">
+        <item name="android:background">@drawable/shape_textinputlayout</item>
+        <item name="boxBackgroundColor">@android:color/transparent</item>
+        <item name="boxBackgroundMode">filled</item>
+        <item name="boxStrokeColor">@color/secondaryColor</item>
+        <item name="hintTextColor">@color/black</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:padding">5dp</item>
+        <item name="android:layout_width">348dp</item>
+        <item name="android:layout_height">70dp</item>
+        <item name ="android:layout_marginTop">5dp</item>
+    </style>
+    <style name="TextInputEditText">
+        <item name="background">@android:color/transparent</item>
+    </style>
+    <style name="btn">
+        <item name="fontFamily">@font/minecraft</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+    <style name="btnDash" parent="btn">
+        <item name="android:layout_width">126dp</item>
+        <item name="android:layout_height">73dp</item>
+        <item name="android:layout_margin">10dp</item>
+    </style>
+</resources>
